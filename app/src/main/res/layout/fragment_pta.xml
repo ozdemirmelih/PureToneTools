@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pta">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.ptaaverage.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sağ  500 Hz Hava eşiği"
+                    />
+                >
+                <EditText
+                    android:id="@+id/besyuzHava"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:selectAllOnFocus="true"
+                    android:inputType="number"/>
+                ></LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sağ 1000 Hz Hava Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/binhava"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                ></LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sağ 2000 Hz Hava Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/ikibinhava"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                ></LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sağ 4000 Hz Hava Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/dortbinhava"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                ></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sağ 500 Hz kemik Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/besyuzkemik"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sağ 1000 Hz kemik Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/binkemik"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                ></LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sağ 2000 Hz kemik Eşiği"
+                    />
+                <EditText
+                    android:id="@+id/ikibinkemik"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sağ 4000 Hz kemik Eşiği" />
+
+                <EditText
+                    android:id="@+id/dortbinkemik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sol 500 Hz Hava eşiği" />
+                >
+
+                <EditText
+                    android:id="@+id/solbesyuzHava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sol 1000 Hz Hava Eşiği" />
+
+                <EditText
+                    android:id="@+id/solbinhava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sol 2000 Hz Hava Eşiği" />
+
+                <EditText
+                    android:id="@+id/solikibinhava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sol 4000 Hz Hava Eşiği" />
+
+                <EditText
+                    android:id="@+id/soldortbinhava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="sol 500 Hz kemik Eşiği" />
+
+                <EditText
+                    android:id="@+id/solbesyuzkemik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="sol 1000 Hz kemik Eşiği" />
+
+                <EditText
+                    android:id="@+id/solbinkemik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="sol 2000 Hz kemik Eşiği" />
+
+                <EditText
+                    android:id="@+id/solikibinkemik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4000 Hz kemik Eşiği" />
+
+                <EditText
+                    android:id="@+id/soldortbinkemik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:selectAllOnFocus="true" />
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/temizle"
+                    android:layout_width="0dp"
+                    android:text="temizle"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="clickClean"/>
+                <Button
+                    android:id="@+id/Hesapla"
+                    android:text="hesapla"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:onClick="clickCalculate"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
