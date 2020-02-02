@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sıradaki Kelime"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/srtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="SRT"
+        android:textSize="64sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/yuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="32dp"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:text="%0" />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/onceki"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Önceki"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/basadon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Başa Dön"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/sonraki"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sonraki" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
