@@ -88,5 +88,11 @@ public class SrtFragment extends Fragment implements OnClickListener {
 
     public void onClick(View v) {
         TextView srtText = (TextView) getView().findViewById(R.id.srtText);
+        switch (v.getId()) {
+
+
+        }
+
+
     }
 }

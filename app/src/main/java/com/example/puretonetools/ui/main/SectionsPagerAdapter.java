@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.puretonetools.Pta;
 import com.example.puretonetools.R;
+import com.example.puretonetools.SrtFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -18,7 +19,7 @@ import com.example.puretonetools.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_2};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -32,7 +33,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
        switch(position){
            case 0: return Pta.newInstance(0,"page1");
-           case 1: return Pta.newInstance(1,"page2");
+           case 1:
+               return SrtFragment.newInstance(0, "page2", false);
+           case 2:
+               return SrtFragment.newInstance(1, "page2", true);
        default:
            return null ;
        }
@@ -46,7 +50,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 2 total pages.
-        return 2;
+        // Show 3 total pages.
+        return 3;
     }
 }
