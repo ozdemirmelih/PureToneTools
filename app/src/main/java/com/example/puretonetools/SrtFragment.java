@@ -39,6 +39,7 @@ public class SrtFragment extends Fragment implements OnClickListener {
         fragment.setArguments(args);
         return fragment;
     }
+//TODO TAKE SRT CALCULATIONS TO ANTOHER CLASS AND CREATE SORURCES.XML TO MULTİLANG SUPPORT
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
