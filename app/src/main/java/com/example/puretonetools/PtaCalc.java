@@ -8,17 +8,21 @@ public class PtaCalc {
     String finalText;
 
     public String Ptacal(int a, int b, int c, int d, int j, int f, int g, int k, boolean isLeft) {
+        double freksayi = 4.0;
+        double rawsafSes = (a + b + c + d) / freksayi;
+        int safSes = (int) Math.round(rawsafSes);
 
-        int safSes = (a + b + c + d) / 4;
-        int kSafses = (j + f + g + k) / 4;
+        double rawkSafses = (j + f + g + k) / freksayi;
+
+        int kSafses = (int) Math.round(rawkSafses);
         int gap = safSes - kSafses;
 
         // Calculating degree and type of hearing loss
 
         if (isLeft) {
-            kulak = "Sağ kulakta";
+            kulak = "Sağ kulakta" + System.lineSeparator();
         } else {
-            kulak = "Sol Kulakta";
+            kulak = System.lineSeparator() + "Sol Kulakta" + System.lineSeparator();
         }
 
         if (safSes <= 25) {
@@ -65,6 +69,8 @@ public class PtaCalc {
                         if (gap >= 10 && kSafses <= 25) {
 
                             kturu = "İletim tip kayıp";
+                        } else {
+                            kturu = " ";
                         }
                     }
                 }
