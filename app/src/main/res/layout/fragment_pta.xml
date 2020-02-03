@@ -24,7 +24,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sağ  500 Hz Hava eşiği"
+                    android:text="@string/besyuz_hava_sag_esik"
                     />
                 >
                 <EditText
@@ -41,7 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sağ 1000 Hz Hava Eşiği"
+                    android:text="@string/bin_hava_sag_esik"
                     />
                 <EditText
                     android:id="@+id/binhava"
@@ -57,7 +57,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sağ 2000 Hz Hava Eşiği"
+                    android:text="@string/ikibin_hava_sag_esik"
                     />
                 <EditText
                     android:id="@+id/ikibinhava"
@@ -74,7 +74,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sağ 4000 Hz Hava Eşiği"
+                    android:text="@string/dortbin_hava_sag_esik"
                     />
                 <EditText
                     android:id="@+id/dortbinhava"
@@ -92,7 +92,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sağ 500 Hz kemik Eşiği"
+                    android:text="@string/besyuz_kemik_sag_esik"
                     />
                 <EditText
                     android:id="@+id/besyuzkemik"
@@ -110,7 +110,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sağ 1000 Hz kemik Eşiği"
+                    android:text="@string/bin_kemik_sag_esik"
                     />
                 <EditText
                     android:id="@+id/binkemik"
@@ -127,7 +127,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sağ 2000 Hz kemik Eşiği"
+                    android:text="@string/ikibin_kemik_sag_esik"
                     />
                 <EditText
                     android:id="@+id/ikibinkemik"
@@ -146,7 +146,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sağ 4000 Hz kemik Eşiği" />
+                    android:text="@string/dortbin_kemik_sag_esik" />
 
                 <EditText
                     android:id="@+id/dortbinkemik"
@@ -165,7 +165,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Sol 500 Hz Hava eşiği" />
+                    android:text="@string/besyuz_hava_sol_esik" />
                 >
 
                 <EditText
@@ -185,7 +185,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sol 1000 Hz Hava Eşiği" />
+                    android:text="@string/bin_hava_sol_esik" />
 
                 <EditText
                     android:id="@+id/solbinhava"
@@ -204,7 +204,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="sol 2000 Hz Hava Eşiği" />
+                    android:text="@string/ikibin_hava_sol_esik" />
 
                 <EditText
                     android:id="@+id/solikibinhava"
@@ -224,7 +224,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sol 4000 Hz Hava Eşiği" />
+                    android:text="@string/dortbin_hava_sol_esik" />
 
                 <EditText
                     android:id="@+id/soldortbinhava"
@@ -244,7 +244,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="sol 500 Hz kemik Eşiği" />
+                    android:text="@string/besyuz_kemik_sol_esik" />
 
                 <EditText
                     android:id="@+id/solbesyuzkemik"
@@ -264,7 +264,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="sol 1000 Hz kemik Eşiği" />
+                    android:text="@string/bin_kemik_sol_esik" />
 
                 <EditText
                     android:id="@+id/solbinkemik"
@@ -284,7 +284,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="sol 2000 Hz kemik Eşiği" />
+                    android:text="@string/ikibin_kemik_sol_esik" />
 
                 <EditText
                     android:id="@+id/solikibinkemik"
@@ -302,7 +302,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="4000 Hz kemik Eşiği" />
+                    android:text="@string/dortbin_kemik_sol_esik" />
 
                 <EditText
                     android:id="@+id/soldortbinkemik"
@@ -321,15 +321,13 @@
                     android:layout_width="0dp"
                     android:text="temizle"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:onClick="clickClean"/>
+                    android:layout_weight="1" />
                 <Button
                     android:id="@+id/Hesapla"
                     android:text="hesapla"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:onClick="clickCalculate"/>
+                    android:layout_height="match_parent" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

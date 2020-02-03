@@ -11,7 +11,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sıradaki Kelime"
+            android:text="@string/sıradaki"
             android:textSize="36sp" />
     </LinearLayout>
 
@@ -52,22 +52,22 @@
                 android:id="@+id/onceki"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Önceki"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="@string/onceki" />
 
             <Button
                 android:id="@+id/basadon"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Başa Dön"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="@string/basadon" />
 
             <Button
                 android:id="@+id/sonraki"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Sonraki" />
+                android:text="@string/sonraki" />
         </LinearLayout>
     </LinearLayout>
 

@@ -78,9 +78,9 @@ public class SrtFragment extends Fragment implements OnClickListener {
         Button sonra = (Button) getView().findViewById(R.id.sonraki);
         sonra.setOnClickListener(this);
         if (isSDS) {
-            once.setText("Yanlış");
-            basa.setText("Sonraki Liste");
-            sonra.setText("Doğru");
+            once.setText(R.string.yanlis);
+            basa.setText(R.string.degis);
+            sonra.setText(R.string.dogru);
             pert.setVisibility(View.VISIBLE);
             srtText.setText("Kas");
         }

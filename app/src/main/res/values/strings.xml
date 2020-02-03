@@ -1,7 +1,57 @@
 <resources>
     <string name="app_name">PureTone Tools</string>
     <string name="tab_text_1">Tab 1</string>
+    <string name="temizle">Temizle</string>
+    <string name="hesapla">Hesapla</string>
+    <string name="onceki">Önceki</string>
+    <string name="sonraki">Sonraki</string>
+    <string name="basadon">Başa Dön</string>
+    <string name="dogru">Doğru</string>
+    <string name="yanlis">Yanlış</string>
+    <string name="degis">Yeni Liste</string>
+    <string name="normal">İşitme Eşikleri Normal Olarak </string>
+    <string name="hafif">Hafif Derece </string>
+    <string name="orta">Orta Derece</string>
+    <string name="ortaileri">Orta İleri Derece</string>
+    <string name="ileri">İleri Derece</string>
+    <string name="cokileri">Çok İleri Derece</string>
+    <string name="sn">Sensori Nöral Tip Kayıp</string>
+    <string name="iletim">İletim Tip Kayıp</string>
+    <string name="mix">Mix Tip Kayıp</string>
+    <string name="yuksek">Eşiklerden Biri Son Çıkıştan Yüksek </string>
+    <string name="gap">Kemik Yolları Daha Kötü</string>
+    <string name="hava_ort">Hava yolu ortalaması:</string>
+    <string name="kemik_ort">Kemik yolu ortalaması:</string>
+    <string name="sagkulak">Sağ Kulakta</string>
+    <string name="solkulak">Sol Kulakta</string>
+    <string name="kemikotu">Kemik Yolları Daha Kötü.</string>
+
+    <string name="gozlem">Gözlemlenmiştir.</string>
+
+
     <string name="tab_text_2">Tab 2</string>
+    <string name="sonuc">Sonuçlar</string>
+    <string name="sıradaki">Sıradaki Kelime:</string>
+    <string name="besyuz_hava_sag_esik">Sağ Kulaktaki  500Hz Hava Eşiği :</string>
+    <string name="bin_hava_sag_esik">Sağ Kulaktaki 1000Hz Hava Eşiği :</string>
+    <string name="ikibin_hava_sag_esik">Sağ Kulaktaki 2000Hz Hava Eşiği :</string>
+    <string name="dortbin_hava_sag_esik">Sağ Kulaktaki 4000Hz Hava Eşiği :</string>
+    <string name="besyuz_kemik_sag_esik">Sağ Kulaktaki 500Hz Kemik Eşiği :</string>
+    <string name="bin_kemik_sag_esik">Sağ Kulaktaki 1000Hz Kemik Eşiği :</string>
+    <string name="ikibin_kemik_sag_esik">Sağ Kulaktaki 2000Hz Kemik Eşiği :</string>
+    <string name="dortbin_kemik_sag_esik">Sağ Kulaktaki 4000Hz Kemik Eşiği :</string>
+
+
+    <string name="besyuz_hava_sol_esik">Sol Kulaktaki  500Hz Hava Eşiği :</string>
+    <string name="bin_hava_sol_esik">Sol Kulaktaki 1000Hz Hava Eşiği :</string>
+    <string name="ikibin_hava_sol_esik">Sol Kulaktaki 2000Hz Hava Eşiği :</string>
+    <string name="dortbin_hava_sol_esik">Sol Kulaktaki 4000Hz Hava Eşiği :</string>
+    <string name="besyuz_kemik_sol_esik">Sol Kulaktaki 500Hz Kemik Eşiği :</string>
+    <string name="bin_kemik_sol_esik">Sol Kulaktaki 1000Hz Kemik Eşiği :</string>
+    <string name="ikibin_kemik_sol_esik">Sol Kulaktaki 2000Hz Kemik Eşiği :</string>
+    <string name="dortbin_kemik_sol_esik">Sol Kulaktaki 4000Hz Kemik Eşiği :</string>
+
+
     <string-array name="srt_list">
         <item>SRT</item>
         <item>Hatıra</item>
