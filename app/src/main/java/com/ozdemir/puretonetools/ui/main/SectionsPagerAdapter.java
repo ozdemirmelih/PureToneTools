@@ -1,4 +1,4 @@
-package com.example.puretonetools.ui.main;
+package com.ozdemir.puretonetools.ui.main;
 
 import android.content.Context;
 
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.puretonetools.Pta;
-import com.example.puretonetools.R;
-import com.example.puretonetools.SrtFragment;
+import com.ozdemir.puretonetools.Pta;
+import com.ozdemir.puretonetools.R;
+import com.ozdemir.puretonetools.SrtFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

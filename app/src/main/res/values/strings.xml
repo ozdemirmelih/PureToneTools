@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">PureTone Tools</string>
-    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_1">SSO</string>
+    <string name="tab_text_3">SDS</string>
+
     <string name="temizle">Temizle</string>
     <string name="hesapla">Hesapla</string>
     <string name="onceki">Önceki</string>
@@ -29,7 +31,7 @@
     <string name="gozlem">Gözlemlenmiştir.</string>
 
 
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_2">SDS</string>
     <string name="sonuc">Sonuçlar</string>
     <string name="sıradaki">Sıradaki Kelime:</string>
     <string name="besyuz_hava_sag_esik">Sağ Kulaktaki  500Hz Hava Eşiği :</string>

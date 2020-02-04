@@ -1,14 +1,14 @@
-package com.example.puretonetools;
+package com.ozdemir.puretonetools;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.ContextWrapper;
 
 public class PtaCalc extends Application {
     String kDerece;
     String kturu;
     String kulak;
     String finalText;
+    //Todo Find another way to pass context
     protected static Context context;
 
     @Override
@@ -27,6 +27,7 @@ public class PtaCalc extends Application {
 
     public String Ptacal(int a, int b, int c, int d, int j, int f, int g, int k, boolean isLeft) {
         Context con = getAppContext();
+        //Pure tone average must be double for rounding so both sides of calculatinon must be double
         double freksayi = 4.0;
         double rawsafSes = (a + b + c + d) / freksayi;
         int safSes = (int) Math.round(rawsafSes);
@@ -39,9 +40,9 @@ public class PtaCalc extends Application {
         // Calculating degree and type of hearing loss
 
         if (isLeft) {
-            kulak = con.getResources().getString(R.string.sagkulak) + System.lineSeparator();
+            kulak = con.getResources().getString(R.string.solkulak) + System.lineSeparator();
         } else {
-            kulak = System.lineSeparator() + con.getResources().getString(R.string.solkulak) + System.lineSeparator();
+            kulak = System.lineSeparator() + con.getResources().getString(R.string.sagkulak) + System.lineSeparator();
         }
 
         if (safSes <= 25) {

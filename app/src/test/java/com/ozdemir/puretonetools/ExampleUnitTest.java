@@ -1,4 +1,4 @@
-package com.example.puretonetools;
+package com.ozdemir.puretonetools;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.puretonetools.ui.main;
+package com.ozdemir.puretonetools.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
