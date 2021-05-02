@@ -311,6 +311,12 @@
                     android:inputType="number"
                     android:selectAllOnFocus="true" />
                 >
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/chart">
+
+                </com.github.mikephil.charting.charts.LineChart>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"

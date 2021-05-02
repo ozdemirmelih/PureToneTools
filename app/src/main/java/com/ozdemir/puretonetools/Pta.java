@@ -16,6 +16,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+
+import java.util.ArrayList;
+
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,7 +40,10 @@ public class Pta extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-
+    int a;
+    int b;
+    int c;
+    int d;
     // TODO: Rename and change types of parameters
     private int page;
     private String title;
@@ -62,6 +76,10 @@ public class Pta extends Fragment implements View.OnClickListener {
         if (getArguments() != null) {
            page=getArguments().getInt("someint",0);
            title=getArguments().getString("sometitle");
+
+
+
+
         }
     }
 
@@ -114,6 +132,28 @@ public class Pta extends Fragment implements View.OnClickListener {
         EditText binkl = getView().findViewById(R.id.solbinkemik);
         EditText ikikl = getView().findViewById(R.id.solikibinkemik);
         EditText dortkl = getView().findViewById(R.id.soldortbinkemik);
+        LineChart chart = getView().findViewById(R.id.chart);
+        YAxis leftAxis = chart.getAxisLeft();
+        YAxis rightaxis = chart.getAxisRight();
+        XAxis up =chart.getXAxis();
+        up.setAxisMaximum(8000);
+        up.setAxisMinimum(125);
+        up.setLabelCount(8,true);
+
+        leftAxis.setAxisMaximum(120);
+        leftAxis.setAxisMinimum(-20);
+        leftAxis.setInverted(true);
+       // chart.setTouchEnabled(false);
+        leftAxis.setLabelCount(15,true);
+        rightaxis.setAxisMaximum(120);
+        rightaxis.setAxisMinimum(-20);
+        rightaxis.setInverted(true);
+       // chart.setTouchEnabled(false);
+        rightaxis.setLabelCount(15,true);
+
+
+
+
         switch (v.getId()){
             case R.id.temizle:
 
@@ -136,10 +176,10 @@ public class Pta extends Fragment implements View.OnClickListener {
                 break;
             case R.id.Hesapla:
 
-                int a=Integer.parseInt(bh.getText().toString());
-                int b = Integer.parseInt(binh.getText().toString());
-                int c = Integer.parseInt(ikih.getText().toString());
-                int d = Integer.parseInt(dorth.getText().toString());
+              int   a=Integer.parseInt(bh.getText().toString());
+              int   b = Integer.parseInt(binh.getText().toString());
+               int  c = Integer.parseInt(ikih.getText().toString());
+               int d = Integer.parseInt(dorth.getText().toString());
 
                 int j = Integer.parseInt(bk.getText().toString());
                 int f = Integer.parseInt(bink.getText().toString());
@@ -157,6 +197,12 @@ public class Pta extends Fragment implements View.OnClickListener {
                 int kl = Integer.parseInt(dortkl.getText().toString());
                 PtaCalc alr = new PtaCalc();
                 PtaCalc all = new PtaCalc();
+                LineDataSet dataSet1= new LineDataSet(leftptabone(a,b,c,d),"sol kemik");
+                ArrayList<ILineDataSet>dataSets=new ArrayList<>();
+                dataSets.add(dataSet1);
+                LineData data = new LineData(dataSets);
+                chart.setData(data);
+
                 alr.Ptacal(a, b, c, d, j, g, f, k, false);
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(getActivity());
                 builder1.setMessage(alr.Ptacal(a, b, c, d, j, g, f, k, false) +System.lineSeparator()  + all.Ptacal(al, bl, cl, dl, jl, gl, fl, kl, true));
@@ -205,7 +251,14 @@ public class Pta extends Fragment implements View.OnClickListener {
 
 
     }
-
+    private ArrayList<Entry>leftptabone(int a,int b,int c,int d){
+        ArrayList<Entry> ptaset= new ArrayList<Entry>();
+        ptaset.add(new Entry(500,a));
+        ptaset.add(new Entry(1000,b));
+        ptaset.add(new Entry(2000,c));
+        ptaset.add(new Entry(4000,d));
+        return ptaset;
+    }
 
 }
 
