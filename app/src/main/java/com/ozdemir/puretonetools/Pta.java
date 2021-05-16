@@ -112,6 +112,7 @@ public class Pta extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+       //get HL from view
         EditText bh = getView().findViewById(R.id.besyuzHava);
         EditText binh = getView().findViewById(R.id.binhava);
         EditText ikih = getView().findViewById(R.id.ikibinhava);
@@ -128,7 +129,11 @@ public class Pta extends Fragment implements View.OnClickListener {
         EditText binkl = getView().findViewById(R.id.solbinkemik);
         EditText ikikl = getView().findViewById(R.id.solikibinkemik);
         EditText dortkl = getView().findViewById(R.id.soldortbinkemik);
+        // get graph from view
+
         LineChart chart = getView().findViewById(R.id.chart);
+       //set xAxis labels
+
         final ArrayList<String> xAxisLabel = new ArrayList<>();
         xAxisLabel.add("125");
         xAxisLabel.add("250");
@@ -137,6 +142,8 @@ public class Pta extends Fragment implements View.OnClickListener {
         xAxisLabel.add("2000");
         xAxisLabel.add("4000");
         xAxisLabel.add("8000");
+
+        //Set audiogram graph
         YAxis leftAxis = chart.getAxisLeft();
         YAxis rightaxis = chart.getAxisRight();
         XAxis up = chart.getXAxis();
@@ -145,7 +152,6 @@ public class Pta extends Fragment implements View.OnClickListener {
         leftAxis.setAxisMaximum(120);
         leftAxis.setAxisMinimum(-20);
         leftAxis.setInverted(true);
-        // chart.setTouchEnabled(false);
         leftAxis.setLabelCount(15, true);
         rightaxis.setAxisMaximum(120);
         rightaxis.setAxisMinimum(-20);
@@ -156,7 +162,7 @@ public class Pta extends Fragment implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.temizle:
-
+// clean Up Hl info
                 bh.setText("0");
                 binh.setText("0");
                 ikih.setText("0");
@@ -175,7 +181,7 @@ public class Pta extends Fragment implements View.OnClickListener {
                 dortkl.setText("0");
                 break;
             case R.id.Hesapla:
-
+            //get Hl info from view (a,b,c,d from right ear,al,bl,cl,dl from left)
                 int a = Integer.parseInt(bh.getText().toString());
                 int b = Integer.parseInt(binh.getText().toString());
                 int c = Integer.parseInt(ikih.getText().toString());
@@ -195,13 +201,10 @@ public class Pta extends Fragment implements View.OnClickListener {
                 int fl = Integer.parseInt(binkl.getText().toString());
                 int gl = Integer.parseInt(ikikl.getText().toString());
                 int kl = Integer.parseInt(dortkl.getText().toString());
-                PtaCalc alr = new PtaCalc();
-                PtaCalc all = new PtaCalc();
 
-
+                // Set and add data for graph
                 LineDataSet dataSet1 = new LineDataSet(ptaair(a, b, c, d), "sağ hava");
                 dataSet1.setCircleColor(Color.RED);
-
                 LineDataSet dataSet2 = new LineDataSet(ptabone(j, f, g, k), "sağkemik");
                 LineDataSet dataSet3 = new LineDataSet(ptaair(al, bl, cl, dl), "sol Hava");
                 LineDataSet dataSet4 = new LineDataSet(ptabone(jl, fl, gl, kl), "sol kemik");
@@ -213,6 +216,11 @@ public class Pta extends Fragment implements View.OnClickListener {
                 LineData data = new LineData(dataSets);
                 chart.setData(data);
 
+
+
+               //Pure tone Average calculation and show results
+                PtaCalc alr = new PtaCalc();
+                PtaCalc all = new PtaCalc();
                 alr.Ptacal(a, b, c, d, j, g, f, k, false);
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(getActivity());
                 builder1.setMessage(alr.Ptacal(a, b, c, d, j, g, f, k, false) + System.lineSeparator() + all.Ptacal(al, bl, cl, dl, jl, gl, fl, kl, true));
@@ -243,7 +251,7 @@ public class Pta extends Fragment implements View.OnClickListener {
 
 
     }
-
+// For Air and bone graphs there need two seperate datasets
     private ArrayList<Entry> ptabone(int a, int b, int c, int d) {
         ArrayList<Entry> ptaset = new ArrayList<Entry>();
         ptaset.add(new Entry(0, a));
