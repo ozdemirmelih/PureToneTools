@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PureTone Tools</string>
+    <string name="tab_text_1" translatable="false">SSO</string>
+    <string name="tab_text_3" translatable="false">SDS</string>
+    <string name="temizle" translatable="false">Temizle</string>
+    <string name="hesapla" translatable="false">Hesapla</string>
+    <string name="onceki" translatable="false">Önceki</string>
+    <string name="sonraki" translatable="false">Sonraki</string>
+    <string name="basadon" translatable="false">Başa Dön</string>
+    <string name="dogru" translatable="false">Doğru</string>
+    <string name="yanlis" translatable="false">Yanlış</string>
+    <string name="degis" translatable="false">Yeni Liste</string>
+    <string name="normal" translatable="false">"İşitme Eşikleri Normal Olarak "</string>
+    <string name="hafif" translatable="false">"Hafif Derece "</string>
+    <string name="orta" translatable="false">Orta Derece</string>
+    <string name="ortaileri" translatable="false">Orta İleri Derece</string>
+    <string name="ileri" translatable="false">İleri Derece</string>
+    <string name="cokileri" translatable="false">Çok İleri Derece</string>
+    <string name="sn" translatable="false">Sensori Nöral Tip Kayıp</string>
+    <string name="iletim" translatable="false">İletim Tip Kayıp</string>
+    <string name="mix" translatable="false">Mix Tip Kayıp</string>
+    <string name="yuksek" translatable="false">Mix Tip Kayıp</string>
+    <string name="gap" translatable="false">Kemik Yolları Daha Kötü</string>
+    <string name="hava_ort" translatable="false">Hava yolu ortalaması:</string>
+    <string name="kemik_ort" translatable="false">Kemik yolu ortalaması:</string>
+    <string name="sagkulak" translatable="false">Sağ Kulakta</string>
+    <string name="solkulak" translatable="false">Sol Kulakta</string>
+    <string name="kemikotu" translatable="false">Kemik Yolları Daha Kötü.</string>
+    <string name="gozlem" translatable="false">Gözlemlenmiştir.</string>
+    <string name="tab_text_2" translatable="false">SDS</string>
+    <string name="sonuc" translatable="false">Sonuçlar</string>
+    <string name="sıradaki" translatable="false">Sıradaki Kelime:</string>
+    <string name="besyuz_hava_sag_esik" translatable="false">Sağ Kulaktaki 500Hz Hava Eşiği :</string>
+    <string name="bin_hava_sag_esik" translatable="false">Sağ Kulaktaki 1000Hz Hava Eşiği :</string>
+    <string name="ikibin_hava_sag_esik" translatable="false">Sağ Kulaktaki 2000Hz Hava Eşiği :</string>
+    <string name="dortbin_hava_sag_esik" translatable="false">Sağ Kulaktaki 4000Hz Hava Eşiği :</string>
+    <string name="besyuz_kemik_sag_esik" translatable="false">Sağ Kulaktaki 500Hz Kemik Eşiği :</string>
+    <string name="bin_kemik_sag_esik" translatable="false">Sağ Kulaktaki 1000Hz Kemik Eşiği :</string>
+    <string name="ikibin_kemik_sag_esik" translatable="false">Sağ Kulaktaki 2000Hz Kemik Eşiği :</string>
+    <string name="dortbin_kemik_sag_esik" translatable="false">Sağ Kulaktaki 4000Hz Kemik Eşiği :</string>
+    <string name="besyuz_hava_sol_esik">Sol Kulaktaki  500Hz Hava Eşiği :</string>
+    <string name="bin_hava_sol_esik">Sol Kulaktaki 1000Hz Hava Eşiği :</string>
+    <string name="ikibin_hava_sol_esik">Sol Kulaktaki 2000Hz Kemik Eşiği :</string>
+    <string name="dortbin_hava_sol_esik">Sol Kulaktaki 4000Hz Hava Eşiği :</string>
+    <string name="besyuz_kemik_sol_esik">Sol Kulaktaki 500Hz Kemik Eşiği :</string>
+    <string name="bin_kemik_sol_esik">Sol Kulaktaki 1000Hz Kemik Eşiği :</string>
+    <string name="ikibin_kemik_sol_esik">Sol Kulaktaki 2000Hz Kemik Eşiği :</string>
+    <string name="dortbin_kemik_sol_esik">Sol Kulaktaki 4000Hz Kemik Eşiği :</string>
+</resources>

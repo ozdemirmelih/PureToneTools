@@ -20,7 +20,7 @@
     <string name="sn">Sensori Nöral Tip Kayıp</string>
     <string name="iletim">İletim Tip Kayıp</string>
     <string name="mix">Mix Tip Kayıp</string>
-    <string name="yuksek">Eşiklerden Biri Son Çıkıştan Yüksek </string>
+    <string name="yuksek">Mix Tip Kayıp</string>
     <string name="gap">Kemik Yolları Daha Kötü</string>
     <string name="hava_ort">Hava yolu ortalaması:</string>
     <string name="kemik_ort">Kemik yolu ortalaması:</string>
@@ -34,7 +34,7 @@
     <string name="tab_text_2">SDS</string>
     <string name="sonuc">Sonuçlar</string>
     <string name="sıradaki">Sıradaki Kelime:</string>
-    <string name="besyuz_hava_sag_esik">Sağ Kulaktaki  500Hz Hava Eşiği :</string>
+    <string name="besyuz_hava_sag_esik">Sağ Kulaktaki 500Hz Hava Eşiği :</string>
     <string name="bin_hava_sag_esik">Sağ Kulaktaki 1000Hz Hava Eşiği :</string>
     <string name="ikibin_hava_sag_esik">Sağ Kulaktaki 2000Hz Hava Eşiği :</string>
     <string name="dortbin_hava_sag_esik">Sağ Kulaktaki 4000Hz Hava Eşiği :</string>
@@ -46,7 +46,7 @@
 
     <string name="besyuz_hava_sol_esik">Sol Kulaktaki  500Hz Hava Eşiği :</string>
     <string name="bin_hava_sol_esik">Sol Kulaktaki 1000Hz Hava Eşiği :</string>
-    <string name="ikibin_hava_sol_esik">Sol Kulaktaki 2000Hz Hava Eşiği :</string>
+    <string name="ikibin_hava_sol_esik">Sol Kulaktaki 2000Hz Kemik Eşiği :</string>
     <string name="dortbin_hava_sol_esik">Sol Kulaktaki 4000Hz Hava Eşiği :</string>
     <string name="besyuz_kemik_sol_esik">Sol Kulaktaki 500Hz Kemik Eşiği :</string>
     <string name="bin_kemik_sol_esik">Sol Kulaktaki 1000Hz Kemik Eşiği :</string>

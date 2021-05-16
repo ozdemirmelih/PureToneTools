@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PureTone Tools</string>
+    <string name="tab_text_1" translatable="false">PTA</string>
+    <string name="tab_text_3" translatable="false">SDS</string>
+    <string name="temizle" translatable="false">Clear</string>
+    <string name="hesapla" translatable="false">Calculate</string>
+    <string name="onceki" translatable="false">Previous</string>
+    <string name="basadon" translatable="false">Return Start</string>
+    <string name="dogru" translatable="false">Correct</string>
+    <string name="yanlis" translatable="false">Incorrect</string>
+    <string name="degis" translatable="false">New List</string>
+    <string name="normal" translatable="false">Hearing thresholds are normal</string>
+    <string name="hafif" translatable="false">Mild</string>
+    <string name="orta" translatable="false">Moderate</string>
+    <string name="ortaileri" translatable="false">Moderately severe</string>
+    <string name="ileri" translatable="false">Severe</string>
+    <string name="cokileri" translatable="false">Profound</string>
+    <string name="sn" translatable="false">Sensorineural hearing loss</string>
+    <string name="iletim" translatable="false">Conductive hearing loss</string>
+    <string name="mix" translatable="false">Mixed hearing loss</string>
+    <string name="yuksek" translatable="false">One or more thresholds are above maximum</string>
+    <string name="gap" translatable="false">Bone Conduction is worse</string>
+    <string name="hava_ort" translatable="false">Airway Average:</string>
+    <string name="kemik_ort" translatable="false">Bone way Average:</string>
+    <string name="sagkulak" translatable="false">On Right Ear</string>
+    <string name="solkulak" translatable="false">On Left Ear</string>
+    <string name="kemikotu" translatable="false">Bone Conduction is worse</string>
+    <string name="gozlem" translatable="false">Observed</string>
+    <string name="tab_text_2" translatable="false">SDS</string>
+    <string name="sonuc" translatable="false">Results</string>
+    <string name="sıradaki" translatable="false">Next Word:</string>
+    <string name="besyuz_hava_sag_esik" translatable="false">500Hz Threshold of Right Ear Air way</string>
+    <string name="bin_hava_sag_esik" translatable="false">1000Hz Threshold of Right Ear Air way</string>
+    <string name="ikibin_hava_sag_esik" translatable="false">2000Hz Threshold of Right Ear Air way</string>
+    <string name="dortbin_hava_sag_esik" translatable="false">4000 Hz Threshold of Right Ear Air way</string>
+    <string name="besyuz_kemik_sag_esik" translatable="false">500Hz Threshold of Right Ear Bone way</string>
+    <string name="bin_kemik_sag_esik" translatable="false">1000Hz Threshold of Right Ear Bone way</string>
+    <string name="ikibin_kemik_sag_esik" translatable="false">2000Hz Threshold of Right Ear Bone way</string>
+    <string name="dortbin_kemik_sag_esik" translatable="false">4000Hz Threshold of Right Ear Bone way</string>
+    <string name="besyuz_hava_sol_esik">500Hz Threshold of Left Ear Air way</string>
+    <string name="bin_hava_sol_esik">1000Hz Threshold of Left Ear Air way</string>
+    <string name="ikibin_hava_sol_esik">2000Hz Threshold of Left Ear Air way</string>
+    <string name="dortbin_hava_sol_esik">4000Hz Threshold of Left Ear Air way</string>
+    <string name="besyuz_kemik_sol_esik">500Hz Threshold of Left Ear Bone way</string>
+    <string name="bin_kemik_sol_esik">1000Hz Threshold of Left Ear Bone way</string>
+    <string name="ikibin_kemik_sol_esik">2000Hz Threshold of Left Ear Bone way</string>
+    <string name="dortbin_kemik_sol_esik">4000 Hz Threshold of Left Bone way</string>
+    <string name="sonraki">Next</string>
+</resources>

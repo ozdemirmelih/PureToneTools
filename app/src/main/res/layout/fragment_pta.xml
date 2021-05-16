@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".Pta">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.ozdemir.android.ptaaverage.MainActivity">
@@ -322,18 +321,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/temizle"
                     android:layout_width="0dp"
-                    android:text="temizle"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="@string/temizle" />
+
                 <Button
                     android:id="@+id/Hesapla"
-                    android:text="hesapla"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" />
+                    android:text="@string/hesapla" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
