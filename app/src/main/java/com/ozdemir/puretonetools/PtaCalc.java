@@ -90,7 +90,7 @@ public class PtaCalc extends Application {
 
                             kturu = con.getResources().getString(R.string.iletim);
                         } else {
-                            kturu = " ";
+                            kturu = con.getResources().getString(R.string.normalgap) ;
                         }
                     }
                 }

@@ -3,6 +3,7 @@ package com.ozdemir.puretonetools;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -40,10 +42,6 @@ public class Pta extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-    int a;
-    int b;
-    int c;
-    int d;
     // TODO: Rename and change types of parameters
     private int page;
     private String title;
@@ -203,11 +201,13 @@ public class Pta extends Fragment implements View.OnClickListener {
                 int kl = Integer.parseInt(dortkl.getText().toString());
 
                 // Set and add data for graph
-                LineDataSet dataSet1 = new LineDataSet(ptaair(a, b, c, d), "sağ hava");
+                LineDataSet dataSet1 = new LineDataSet(ptaair(a, b, c, d,ContextCompat.getDrawable(getContext(),R.drawable.right_air)), "sağ hava");
                 dataSet1.setCircleColor(Color.RED);
-                LineDataSet dataSet2 = new LineDataSet(ptabone(j, f, g, k), "sağkemik");
-                LineDataSet dataSet3 = new LineDataSet(ptaair(al, bl, cl, dl), "sol Hava");
-                LineDataSet dataSet4 = new LineDataSet(ptabone(jl, fl, gl, kl), "sol kemik");
+
+                LineDataSet dataSet2 = new LineDataSet(ptabone(j, f, g, k,ContextCompat.getDrawable(getContext(),R.drawable.right_bone)), "sağkemik");
+                dataSet2.setCircleColor(Color.RED);
+                LineDataSet dataSet3 = new LineDataSet(ptaair(al, bl, cl, dl,ContextCompat.getDrawable(getContext(),R.drawable.left_air)), "sol Hava");
+                LineDataSet dataSet4 = new LineDataSet(ptabone(jl, fl, gl, kl,ContextCompat.getDrawable(getContext(),R.drawable.left_bone)), "sol kemik");
                 ArrayList<ILineDataSet> dataSets = new ArrayList<>();
                 dataSets.add(dataSet1);
                 dataSets.add(dataSet2);
@@ -215,6 +215,8 @@ public class Pta extends Fragment implements View.OnClickListener {
                 dataSets.add(dataSet4);
                 LineData data = new LineData(dataSets);
                 chart.setData(data);
+                chart.saveToGallery("deneme");
+
 
 
 
@@ -252,24 +254,23 @@ public class Pta extends Fragment implements View.OnClickListener {
 
     }
 // For Air and bone graphs there need two seperate datasets
-    private ArrayList<Entry> ptabone(int a, int b, int c, int d) {
+    private ArrayList<Entry> ptabone(int a, int b, int c, int d,Drawable drawable) {
         ArrayList<Entry> ptaset = new ArrayList<Entry>();
-        ptaset.add(new Entry(0, a));
-        ptaset.add(new Entry(1, b));
-        ptaset.add(new Entry(2, c));
-        ptaset.add(new Entry(3, d));
+        ptaset.add(new Entry(2, a,drawable));
+        ptaset.add(new Entry(3, b,drawable));
+        ptaset.add(new Entry(4, c,drawable));
+        ptaset.add(new Entry(5, d,drawable));
         return ptaset;
     }
 
-    private ArrayList<Entry> ptaair(int a, int b, int c, int d) {
+    private ArrayList<Entry> ptaair(int a, int b, int c, int d, Drawable drawable) {
         ArrayList<Entry> ptaset = new ArrayList<Entry>();
-        ptaset.add(new Entry(0, a));
-        ptaset.add(new Entry(1, a));
-        ptaset.add(new Entry(2, a));
-        ptaset.add(new Entry(3, b));
-        ptaset.add(new Entry(4, c));
-        ptaset.add(new Entry(5, d));
-        ptaset.add(new Entry(6, d));
+        ptaset.add(new Entry(0, a,drawable));
+        ptaset.add(new Entry(2, a,drawable));
+        ptaset.add(new Entry(3, b,drawable));
+        ptaset.add(new Entry(4, c,drawable));
+        ptaset.add(new Entry(5, d,drawable));
+        ptaset.add(new Entry(6, d,drawable));
         return ptaset;
     }
 
